@@ -1,0 +1,18 @@
+#articles {
+    border: 1px solid yellowgreen;
+
+}
+.article {
+    border: 1px solid black;
+}
+
+.article_heading {
+    color: green;
+
+}
+
+.article_content {
+    color: red;
+
+}
+
