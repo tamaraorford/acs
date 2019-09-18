@@ -8,9 +8,13 @@
 
 #title {
    border:1px solid blue;
-   background-color: aqua;
-  
-
+   background-image: url('../images/mountainroad.jpeg');
+   background-size: cover;
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 #introduction {
