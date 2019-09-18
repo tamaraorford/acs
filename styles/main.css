@@ -1,0 +1,45 @@
+#menu {
+   border:1px solid red;
+   position: fixed;
+   width: 100%;
+
+}         /* the # precurser is used to identify the ID of the labelled hash within the html page.*/
+
+
+#title {
+   border:1px solid blue;
+   background-color: aqua;
+  
+
+}
+
+#introduction {
+    border:1px solid yellow;
+
+}
+
+#footer {
+    border:1px solid green;
+    text-align: center;
+}
+
+#menu ul {
+    padding: 0;
+}
+
+.menu_item  {
+    list-style: none;
+    border: 1px solid black;
+    padding: 5px;
+
+}        
+/* .class identifies the class to which the styling are applied */
+
+.container {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around
+
+}
+/* applies flex box to the class (so changes properties of a block element to that of a flex box */
+/* i am choosing to utilise a class to apply flexboxes so it is apparent in the html file which divs are flex boxes - alternativley i could have inserted display:flex into each id within the css */
