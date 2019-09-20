@@ -1,6 +1,6 @@
-
-
 $title-text-color: white;
+
+@import "menu";
 
 html, body {
   padding: 0;
@@ -12,16 +12,17 @@ h1 {
   margin-top: 50px;
 }
 
-@import "menu";
+
 
 #content {
   flex-direction: row;
-  padding-top: 60px;
+  padding: 20px;
+
 }
 
 #title {
-  border: 1px solid blue;
-  background-image: url('../images/mountainroad.jpeg');
+  border: 0px solid blue;
+  background-image: url('../images/title_index.jpeg');
   background-size: cover;
   background-position: center center;
   width: 100vw;
