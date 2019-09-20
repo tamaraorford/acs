@@ -2,56 +2,61 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./styles/main.css" />              <!--this links the html document with the css, css documents are put into a "style" folder for ease of use-->
-    <title>Tamara's Portfolio</title>                               <!--this is going to be the tab name in the browser-->
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="styles/main.css"/>
+    <!--this links the html document with the css, css documents are put into a "style" folder for ease of use-->
+    <title>Tamara's Portfolio</title>
+    <!--this is going to be the tab name in the browser-->
+    <link type="text/css" rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans">
 </head>
 
 <body>
-    <div id="menu">   <!--a class is applied in order to apply flexbox-->
-        <ul class="container">
-            <li class="menu_item">
-                <a href="home.html">home</a>
-            </li>
-            <li class="menu_item">
-                <a href="contact.html">contact</a>
-            </li>
+<nav id="menu">
+    <label for="hamburger">&#9776;</label>
+    <input type="checkbox" id="hamburger"/>
+    <ul>
+        <li class="menu_item">
+            <a href="index.html">home</a>
+        </li>
+        <li class="menu_item">
+            <a href="contact.html">contact</a>
+        </li>
 
-            <li class="menu_item">
-                <a href="philosophy.html">philosophy</a>
-            </li>
-            <li class="menu_item">
-                <a href="blog.html">blog</a>
-            </li>
-        </ul>
-    </div>
-    <div id="title">
-        <h1>Hi, I'm Tamara, an aspiring fullstack developer.</h1>
-    </div>
-    <div id="introduction">
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea
-            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur.
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea
-            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur.
-        </p>
-    </div>
-    <div id="footer">
-        <p>
-            Copyright 2019.
-        </p>
-
-    </div>
+        <li class="menu_item">
+            <a href="philosophy.html">philosophy</a>
+        </li>
+        <li class="menu_item">
+            <a href="blog.html">blog</a>
+        </li>
+    </ul>
+</nav>
+<div id="title">
+    <p>Hi, I'm Tamara, an aspiring fullstack developer.</p>
+</div>
+<div id="introduction">
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+        ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+        nulla pariatur.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+        ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+        nulla pariatur.
+    </p>
+</div>
+<div id="footer">
+    <p>
+        Copyright 2019.
+    </p>
+</div>
 </body>
 
 </html>
