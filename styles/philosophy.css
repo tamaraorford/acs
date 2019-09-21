@@ -127,10 +127,15 @@ html, body {
   scroll-behavior: smooth;
 }
 
+h1 {
+  margin: 0;
+}
+
 #content {
   flex-direction: row;
-  margin-top: 60px;
-  padding: 15px;
+  margin: auto;
+  margin-top: 56px;
+  padding: 16px;
 }
 
 #hero {
@@ -185,8 +190,6 @@ section {
 @media screen and (min-width: 1000px) {
   #content {
     width: 1000px;
-    margin: auto;
-    margin-top: 60px;
   }
 }
 @media screen and (max-width: 375px) {
