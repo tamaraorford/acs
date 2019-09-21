@@ -221,49 +221,98 @@ i {
   -webkit-transform: rotate(45deg);
 }
 
-#hero {
-  background-image: url("../images/title_philosophy.jpg");
+#blog_post_list {
+  border: 0px solid yellowgreen;
+  flex-grow: 1;
+  flex-shrink: 0;
+  width: 300px;
 }
 
-#content {
-  margin-top: 0px;
+#blog_post_links {
+  border: 0px solid yellowgreen;
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin-left: 15px;
+  margin-top: 10px;
+  text-align: center;
 }
 
-#hero p {
-  color: #E0DCDC;
+#blog_post_links ul {
+  list-style: none;
+  padding: 0;
 }
 
-#menu, #menu ul {
-  background-color: transparent;
+#blog_post_links ul li a {
+  color: #696969;
+  text-decoration: none;
 }
 
-#menu ul li a {
-  color: #E0DCDC;
+#blog_post_links ul li a:hover {
+  text-decoration: underline;
 }
 
-.down {
-  border-color: #E0DCDC;
+.blog_post_date {
+  font-size: small;
 }
 
-@media screen and (max-width: 375px) {
-  #menu {
-    position: absolute;
+.blog_post {
+  border: 1px solid black;
+  margin: 30px;
+  padding: 15px;
+}
+
+.blog_post_heading {
+  color: #696969;
+}
+
+.blog_post_content {
+  color: #696969;
+}
+
+.blog_post_content_text {
+  width: 60vw;
+}
+
+.blog_post_content_image {
+  width: 40vw;
+  margin: 16px;
+}
+
+.blog_post_content_image img {
+  width: 100%;
+}
+
+.flex-container {
+  display: flex;
+}
+
+@media screen and (max-width: 640px) {
+  #blog {
+    flex-direction: column;
   }
 
-  #menu label {
-    color: #3ABFC7;
-    background-color: transparent;
+  #blog_post_list {
+    width: 100%;
   }
 
-  #menu ul li a {
-    color: #696969;
+  .blog_post {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
   }
 
-  #menu input:checked ~ ul {
-    background-color: #F2F2F2;
-    margin-top: -45px;
-    padding-top: 60px;
+  .blog_post_content {
+    flex-direction: column;
+  }
+
+  .blog_post_content_text {
+    width: 100%;
+  }
+
+  .blog_post_content_image {
+    width: 100%;
+    margin: 0;
   }
 }
 
-/*# sourceMappingURL=philosophy.css.map */
+/*# sourceMappingURL=blog.css.map */

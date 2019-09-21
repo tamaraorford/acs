@@ -1,0 +1,35 @@
+#footer {
+  border: 0px solid green;
+  text-align: center;
+}
+
+#footer .socials {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+#footer .socials a {
+  padding: 10px;
+}
+
+.social_media_link_icon {
+  filter: grayscale(100%);
+  opacity: 0.5;
+  width: 30px;
+  height: 30px;
+}
+
+#footer .copyright {
+  font-size: 12px;
+}
+
+#footer .icons_copyrights {
+  font-size: 9px;
+}
+
+#footer .icons_copyrights a {
+  color: $main-font-color;
+}

@@ -1,0 +1,36 @@
+#hero p {
+  color: $title-text-color;
+}
+
+#menu, #menu ul {
+  background-color: transparent;
+}
+
+#menu ul li a {
+  color: $menu-font-color_large_screen;
+  //color: red;
+}
+
+.down {
+  border-color: $title-text-color;
+}
+
+@media screen and (max-width: 375px) {
+  #menu {
+    position: absolute;
+  }
+  #menu label {
+    //color: $title-text-color;
+    color: $primary-color;
+    background-color: transparent;
+  }
+  #menu ul li a {
+    color: $menu-font-color;
+  }
+
+  #menu input:checked ~ ul {
+    background-color: $menu-background-color;
+    margin-top: -45px;
+    padding-top: 60px;
+  }
+}

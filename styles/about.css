@@ -221,49 +221,23 @@ i {
   -webkit-transform: rotate(45deg);
 }
 
-#hero {
-  background-image: url("../images/title_philosophy.jpg");
+.avatar {
+  width: 200px;
+  height: 200px;
+  margin: auto;
 }
 
-#content {
-  margin-top: 0px;
+.avatar img {
+  width: 100%;
+  border-radius: 50% 20%/10% 40%;
+  box-sizing: border-box;
 }
 
-#hero p {
-  color: #E0DCDC;
-}
-
-#menu, #menu ul {
-  background-color: transparent;
-}
-
-#menu ul li a {
-  color: #E0DCDC;
-}
-
-.down {
-  border-color: #E0DCDC;
-}
-
-@media screen and (max-width: 375px) {
-  #menu {
-    position: absolute;
-  }
-
-  #menu label {
-    color: #3ABFC7;
-    background-color: transparent;
-  }
-
-  #menu ul li a {
-    color: #696969;
-  }
-
-  #menu input:checked ~ ul {
-    background-color: #F2F2F2;
-    margin-top: -45px;
-    padding-top: 60px;
+@media screen and (min-width: 500px) {
+  .avatar {
+    float: left;
+    margin-right: 15px;
   }
 }
 
-/*# sourceMappingURL=philosophy.css.map */
+/*# sourceMappingURL=about.css.map */

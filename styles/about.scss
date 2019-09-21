@@ -1,1 +1,22 @@
 @import "common";
+
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+
+.avatar img {
+  width: 100%;
+  border-radius: 50% 20% / 10% 40%;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 500px) {
+  .avatar {
+    float: left;
+    margin-right: 15px;
+  }
+}
+

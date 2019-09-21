@@ -221,14 +221,6 @@ i {
   -webkit-transform: rotate(45deg);
 }
 
-#hero {
-  background-image: url("../images/title_philosophy.jpg");
-}
-
-#content {
-  margin-top: 0px;
-}
-
 #hero p {
   color: #E0DCDC;
 }
@@ -238,7 +230,7 @@ i {
 }
 
 #menu ul li a {
-  color: #E0DCDC;
+  color: #696969;
 }
 
 .down {
@@ -266,4 +258,4 @@ i {
   }
 }
 
-/*# sourceMappingURL=philosophy.css.map */
+/*# sourceMappingURL=index.css.map */

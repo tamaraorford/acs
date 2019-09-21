@@ -1,31 +1,14 @@
 @import "common";
 
-#title {
+$title-text-color: #E0DCDC;
+$menu-font-color: $main-font-color;
+$menu-font-color_large_screen: #E0DCDC;
+
+#hero {
   background-image: url("../images/title_philosophy.jpg");
 }
-#menu, #menu ul {
-  background-color: transparent;
-}
 
-/* large screen menu items font color */
-#menu ul li a {
-  color: white;
+#content {
+  margin-top: 0px;
 }
-
-@media screen and (max-width: 375px) {
-  #menu label {
-    //color: white;
-    //background-color: transparent;
-  }
-  #menu, #menu ul {
-    background-color: $menu-background-color;
-  }
-  #menu ul li a {
-    color: $menu-font-color;
-  }
-
-  //#menu input:checked ~ ul {
-  //  background-color: $menu-background-color;
-  //
-  //}
-}
+@import "menu_transparent_for_hero";
