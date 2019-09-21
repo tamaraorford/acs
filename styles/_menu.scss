@@ -1,6 +1,5 @@
-$menu-background-color: transparent;
-$menu-font-color: #333;
-$menu-border-color: #333;
+//$menu-background-color: transparent;
+
 
 /* [ON BIG SCREEN] */
 /* Wrapper */
@@ -8,11 +7,13 @@ $menu-border-color: #333;
   width: 100%;
   text-align: right;
   background: $menu-background-color;
-  //position: fixed;
-  position: absolute;
+  position: fixed;
+  //position: absolute;
   top: 0;
   padding-top:10px;
+  padding-bottom:10px;
 }
+
 
 /* Hide Hamburger */
 #menu label, #hamburger {
@@ -27,6 +28,7 @@ $menu-border-color: #333;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  background: $menu-background-color;
 }
 
 #menu ul li {
@@ -38,6 +40,7 @@ $menu-border-color: #333;
 }
 #menu ul li:hover {
   font-weight: bold;
+  color: $primary-color;
 }
 
 #menu ul li a {
@@ -46,31 +49,45 @@ $menu-border-color: #333;
   text-align: center;
 }
 
+#menu ul li.active a {
+  color: $primary-color;
+  font-weight: bold;
+}
 /* [ON SMALL SCREENS] */
-@media screen and (max-width: 345px) {
+@media screen and (max-width: 375px) {
+  #menu {
+    padding:0px;
+  }
   /* Show Hamburger */
   #menu label {
     display: inline-block;
-    color: $menu-font-color;
+    color: $primary-color;
     background: $menu-background-color;
+
+
     font-style: normal;
     font-size: 1.2em;
     padding: 10px;
   }
 
   #menu ul li {
-    border-bottom: 1px solid $menu-border-color;
+    //border-bottom: 1px solid $menu-border-color;
     text-align: center;
   }
 
   /* Toggle show/hide menu on checkbox click */
   #menu ul {
     display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 30px;
+    height: 100vh;
   }
   #menu input:checked ~ ul {
     display: flex;
-    flex-direction: column;
-    background-color: white;
+    //background: $primary-color;
+    //background-color: white;
 
   }
 }

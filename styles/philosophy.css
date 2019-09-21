@@ -3,10 +3,11 @@
 #menu {
   width: 100%;
   text-align: right;
-  background: transparent;
-  position: absolute;
+  background: #F2F2F2;
+  position: fixed;
   top: 0;
   padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /* Hide Hamburger */
@@ -22,6 +23,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  background: #F2F2F2;
 }
 
 #menu ul li {
@@ -32,55 +34,65 @@
 
 #menu ul li:hover {
   font-weight: bold;
+  color: #3ABFC7;
 }
 
 #menu ul li a {
-  color: #333;
+  color: #696969;
   text-decoration: none;
   text-align: center;
 }
 
+#menu ul li.active a {
+  color: #3ABFC7;
+  font-weight: bold;
+}
+
 /* [ON SMALL SCREENS] */
-@media screen and (max-width: 345px) {
+@media screen and (max-width: 375px) {
+  #menu {
+    padding: 0px;
+  }
+
   /* Show Hamburger */
   #menu label {
     display: inline-block;
-    color: #333;
-    background: transparent;
+    color: #3ABFC7;
+    background: #F2F2F2;
     font-style: normal;
     font-size: 1.2em;
     padding: 10px;
   }
 
   #menu ul li {
-    border-bottom: 1px solid #333;
     text-align: center;
   }
 
   /* Toggle show/hide menu on checkbox click */
   #menu ul {
     display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 30px;
+    height: 100vh;
   }
 
   #menu input:checked ~ ul {
     display: flex;
-    flex-direction: column;
-    background-color: white;
   }
 }
 html, body {
   padding: 0;
   margin: 0;
-  font-family: arial, sans-serif;
-}
-
-h1 {
-  margin-top: 50px;
+  font-family: Open Sans;
+  font-size: 1em;
+  color: #696969;
 }
 
 #content {
   flex-direction: row;
-  padding: 20px;
+  margin-top: 60px;
 }
 
 #title {
@@ -93,6 +105,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 #title p {
@@ -100,6 +113,10 @@ h1 {
   color: white;
   text-shadow: 2px 2px #333;
   text-align: center;
+}
+
+#title .smaller_text {
+  font-size: 25px;
 }
 
 #introduction {
@@ -126,17 +143,22 @@ h1 {
   background-image: url("../images/title_philosophy.jpg");
 }
 
+#menu, #menu ul {
+  background-color: transparent;
+}
+
+/* large screen menu items font color */
 #menu ul li a {
   color: white;
 }
 
-@media screen and (max-width: 345px) {
-  #menu label {
-    color: white;
+@media screen and (max-width: 375px) {
+  #menu, #menu ul {
+    background-color: #F2F2F2;
   }
 
   #menu ul li a {
-    color: #333;
+    color: #696969;
   }
 }
 

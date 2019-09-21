@@ -1,22 +1,38 @@
+//https://www.wix.com/website-template/view/html/1845
+
+$primary-color: #3ABFC7;
+
+$main-font-color: #696969;
+
 $title-text-color: white;
+$active-link-text-color: $primary-color;
+
+$menu-background-color: #F2F2F2;
+
+$menu-font-color: #696969;
+$menu-border-color: #333;
 
 @import "menu";
 
 html, body {
   padding: 0;
   margin: 0;
-  font-family: arial, sans-serif;
+  font-family: Open Sans;
+  font-size: 1em;
+  color:$main-font-color;
 }
 
 h1 {
-  margin-top: 50px;
+  //margin-top: 50px;
 }
+
 
 
 
 #content {
   flex-direction: row;
-  padding: 20px;
+  //padding: 20px;
+  margin-top: 60px;
 
 }
 
@@ -30,6 +46,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 #title p {
@@ -40,6 +57,9 @@ h1 {
   text-align: center;
 }
 
+#title .smaller_text {
+  font-size: 25px;
+}
 #introduction {
   border: 1px solid yellow;
 

@@ -90,6 +90,10 @@
   .blog_post_content_text {
     width: 100%;
   }
+  .blog_post_content_image {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 
@@ -97,5 +101,6 @@
   #content {
     width: 1000px;
     margin: auto;
+    margin-top: 60px;
   }
 }
