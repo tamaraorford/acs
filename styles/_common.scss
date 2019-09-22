@@ -19,7 +19,7 @@ $menu-border-color: #333;
 html, body {
   padding: 0;
   margin: 0;
-  font-family: Open Sans;
+  font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
   font-size: 1em;
   color: $main-font-color;
   scroll-behavior: smooth;
@@ -38,16 +38,16 @@ h1 {
 }
 
 #hero {
-  border: 0px solid blue;
-  background-image: url('../images/title_index.jpeg');
-  background-size: cover;
-  background-position: center center;
-  width: 100vw;
-  height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  border: 0px solid blue;
+  background-image: url('../images/title_index.jpeg');
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
 }
 
 #hero p {
