@@ -10,7 +10,7 @@
 * https://www.w3schools.com/cssref/css_selectors.asp
 * https://techbrij.com/css-selector-adjacent-child-sibling
 * https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius (for the avatar image)
-
+* https://stackoverflow.com/questions/21421948/protect-e-mail-address-with-css-only
 #### at the end do
 * SRI using: https://www.srihash.org/ or
 

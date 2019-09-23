@@ -4,6 +4,8 @@ $title-text-color: #E0DCDC;
 $menu-font-color: $main-font-color;
 $menu-font-color_large_screen: #E0DCDC;
 
+@import "hero";
+
 #hero {
   background-image: url("../images/title_philosophy.jpg");
 }
@@ -11,4 +13,6 @@ $menu-font-color_large_screen: #E0DCDC;
 #content {
   margin-top: 0px;
 }
+
+
 @import "menu_transparent_for_hero";

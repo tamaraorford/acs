@@ -1,0 +1,33 @@
+#hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 0px solid blue;
+  background-image: url('../images/title_index.jpg');
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+}
+
+#hero p {
+  font-size: 45px;
+
+  color: $title-text-color;
+  text-shadow: 2px 2px $menu-border-color;
+  text-align: center;
+}
+
+#hero .smaller_text {
+  font-size: 25px;
+  padding-top: 50px;
+  flex-grow: 0.5;
+
+}
+
+#hero .large_text {
+  flex-grow: 1;
+  padding:10px;
+
+}
