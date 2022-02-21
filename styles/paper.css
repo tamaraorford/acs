@@ -202,83 +202,14 @@ i {
   -webkit-transform: rotate(45deg);
 }
 
-#hero {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 0px solid blue;
-  background-image: url("../images/java_lanscape.jpg");
-  width: 100vw;
-  height: 100vh;
-  background-size: cover;
-  background-position: center center;
-}
-
-#hero p {
-  font-size: 45px;
-  color: #E0DCDC;
-  text-shadow: 2px 2px #333;
+.formula {
   text-align: center;
 }
 
-#hero .smaller_text {
-  font-size: 40px;
-  padding-top: 160px;
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
 }
-
-#hero .large_text {
-  margin-top: -20px;
-}
-
-#hero {
-  background-image: url("../images/title_philosophy.jpg");
-}
-
-#content {
-  margin-top: 0px;
-}
-
-#hero p {
-  color: #E0DCDC;
-}
-
-#menu, #menu ul {
-  background-color: transparent;
-}
-
-#menu ul li a {
-  color: #E0DCDC;
-}
-
-.down {
-  border-color: #E0DCDC;
-}
-
-@media screen and (max-width: 375px) {
-  #menu {
-    position: absolute;
-  }
-  #menu label {
-    color: #3ABFC7;
-    background-color: transparent;
-  }
-  #menu ul li a {
-    color: #696969;
-  }
-  #menu input:checked ~ ul {
-    background-color: #F2F2F2;
-    margin-top: -45px;
-    padding-top: 60px;
-  }
-}
-/*# sourceMappingURL=philosophy.css.map */
+/*# sourceMappingURL=paper.css.map */

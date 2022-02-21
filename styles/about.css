@@ -21,9 +21,15 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background: #F2F2F2;
 }
 
@@ -55,12 +61,10 @@
     padding: 0px;
     position: fixed;
   }
-
   /* Menu close */
   #menu ul {
     display: none;
   }
-
   /* Show Hamburger Icon */
   #menu label {
     display: inline-block;
@@ -70,30 +74,36 @@
     font-size: 1.2em;
     padding: 10px;
   }
-
   #menu label:after {
     content: "☰";
   }
-
   /* Menu Open */
   #menu input:checked ~ ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     padding-top: 30px;
     height: 100vh;
   }
-
   #menu ul li {
     text-align: center;
   }
-
   /* Show Close Icon */
   #menu input:checked ~ label::after {
     content: "☓";
   }
 }
+
 #footer {
   border: 0px solid green;
   text-align: center;
@@ -101,9 +111,16 @@
 
 #footer .socials {
   background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #footer .socials a {
@@ -111,7 +128,8 @@
 }
 
 .social_media_link_icon {
-  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
   opacity: 0.5;
   width: 30px;
   height: 30px;
@@ -143,7 +161,10 @@ h1 {
 }
 
 #content {
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin: auto;
   margin-top: 56px;
   padding: 16px;
@@ -162,11 +183,13 @@ section {
     width: 1000px;
   }
 }
+
 @media screen and (max-width: 375px) {
   #hero p {
     font-size: 30px;
   }
 }
+
 i {
   border: solid #ffffff;
   border-width: 0 2px 2px 0;
@@ -187,8 +210,18 @@ i {
 
 .avatar img {
   width: 100%;
-  border-radius: 50% 20%/10% 40%;
-  box-sizing: border-box;
+  height: 200px;
+  -o-object-position: 0px -10px;
+     object-position: 0px -10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50% 20% / 10% 40%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+td {
+  padding-left: 20px;
 }
 
 .contact_details p {
@@ -201,11 +234,11 @@ i {
     margin-right: 15px;
   }
 }
+
 /* used to mask the email from web crawler */
 .e-mail:before {
   content: attr(data-website) "@" attr(data-user);
   unicode-bidi: bidi-override;
   direction: rtl;
 }
-
 /*# sourceMappingURL=about.css.map */
