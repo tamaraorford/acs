@@ -232,18 +232,12 @@ i {
 }
 
 #hero .smaller_text {
-  font-size: 25px;
-  padding-top: 50px;
-  -webkit-box-flex: 0.5;
-      -ms-flex-positive: 0.5;
-          flex-grow: 0.5;
+  font-size: 40px;
+  padding-top: 160px;
 }
 
 #hero .large_text {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  padding: 10px;
+  margin-top: -20px;
 }
 
 #hero p {
@@ -255,7 +249,7 @@ i {
 }
 
 #menu ul li a {
-  color: #696969;
+  color: #e2e2e2;
 }
 
 .down {
