@@ -41,7 +41,7 @@
 
 #menu ul li:hover {
   font-weight: bold;
-  color: #3ABFC7;
+  color: #343434;
 }
 
 #menu ul li a {
@@ -51,7 +51,7 @@
 }
 
 #menu ul li.active a {
-  color: #3ABFC7;
+  color: #343434;
   font-weight: bold;
 }
 
@@ -68,7 +68,7 @@
   /* Show Hamburger Icon */
   #menu label {
     display: inline-block;
-    color: #3ABFC7;
+    color: #343434;
     background: #F2F2F2;
     font-style: normal;
     font-size: 1.2em;
@@ -171,7 +171,7 @@ h1 {
 }
 
 #content h2 {
-  color: #3ABFC7;
+  color: #343434;
 }
 
 section {
